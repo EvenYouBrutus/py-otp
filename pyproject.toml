@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-otp"
+version = "0.1.0"
+description = "One-Time Pad encryption for Unicode text (text-in / text-out)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "EvenYouBrutus" }]
+keywords = ["otp", "one-time-pad", "encryption", "cryptography"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security :: Cryptography",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/EvenYouBrutus/py-otp"
+Repository = "https://github.com/EvenYouBrutus/py-otp"
+Issues = "https://github.com/EvenYouBrutus/py-otp/issues"
+
+[tool.setuptools.packages.find]
+where = ["main_library/src"]
